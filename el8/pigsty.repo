@@ -1,0 +1,97 @@
+#=========# [infra] on rocky8
+
+[pigsty-infra]
+name = Pigsty INFRA $releasever - $basearch
+baseurl = https://repo.pigsty.cc/yum/infra/$basearch
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[nginx]
+name = Nginx Repo $releasever - $basearch
+baseurl = https://nginx.org/packages/centos/8/$basearch/
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+
+#=========# [node] on rocky8
+
+[baseos]
+name = EL 8+ BaseOS $releasever - $basearch
+baseurl = https://mirrors.aliyun.com/rockylinux/8/BaseOS/$basearch/os/
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[appstream]
+name = EL 8+ AppStream $releasever - $basearch
+baseurl = https://mirrors.aliyun.com/rockylinux/8/AppStream/$basearch/os/
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[extras]
+name = EL 8+ Extras $releasever - $basearch
+baseurl = https://mirrors.aliyun.com/rockylinux/8/extras/$basearch/os/
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[powertools]
+name = EL 8 PowerTools $releasever - $basearch
+baseurl = https://mirrors.aliyun.com/rockylinux/8/PowerTools/$basearch/os/
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[epel]
+name = EL 8/9 EPEL $releasever - $basearch
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/epel/8/Everything/$basearch/
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+#=========# [pgsql] on rocky8
+
+[pigsty-pgsql]
+name = Pigsty PGSQL $releasever - $basearch
+baseurl = https://repo.pigsty.cc/yum/pgsql/el8.$basearch
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[pgdg-common]
+name = PostgreSQL Common $releasever - $basearch
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/postgresql/repos/yum/common/redhat/rhel-8.9-$basearch
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[pgdg-extras]
+name = PostgreSQL Extra $releasever - $basearch
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/postgresql/repos/yum/common/pgdg-rhel8-extras/redhat/rhel-8-$basearch
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[pgdg-el8fix]
+name = PostgreSQL EL8FIX $releasever - $basearch
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/postgresql/repos/yum/common/pgdg-centos8-sysupdates/redhat/rhel-8-x86_64/
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[pgdg17]
+name = PostgreSQL 17 $releasever - $basearch
+baseurl = https://mirrors.tuna.tsinghua.edu.cn/postgresql/repos/yum/17/redhat/rhel-8-$basearch
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
+
+[timescaledb]
+name = TimescaleDB $releasever - $basearch
+baseurl = https://packagecloud.io/timescale/timescaledb/el/8/$basearch
+gpgcheck = 0
+enabled = 1
+module_hotfixes=1
